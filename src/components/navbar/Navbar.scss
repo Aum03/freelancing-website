@@ -1,0 +1,90 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #013914;
+  color: white;
+  position: sticky;
+  top: 0;
+  transition: 0.5s all ease;
+  z-index: 999;
+
+  .container {
+    width: 1400px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px;
+
+    .logo {
+      font-size: 34px;
+      font-weight: bold;
+
+      .dot {
+        color: aquamarine;
+      }
+    }
+
+    .links {
+      display: flex;
+      gap: 24px;
+      align-items: center;
+      font-weight: 600;
+      cursor: pointer;
+
+      .user {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        position: relative;
+
+        .options {
+          position: absolute;
+          top: 50px;
+          right: 0;
+          padding: 20px;
+          background-color: white;
+          border-radius: 10px;
+          border: 1px solid black;
+          display: flex;
+          flex-direction: column;
+          color: gray;
+          gap: 10px;
+          width: 150px;
+        }
+      }
+
+      button {
+        color: white;
+        border: 1px solid white;
+        padding: 10px 20px;
+        cursor: pointer;
+        background-color: transparent;
+        border-radius: 5px;
+
+        &:hover {
+          background-color: #1dbf73;
+          border—color: #1dbf73;
+        }
+      }
+    }
+  }
+
+  hr {
+    width: 100%;
+    background-color: lightgray;
+  }
+
+  .menu {
+    width: 1400px;
+    padding: 10px 0px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 300;
+    color: gray;
+  }
+}
+
+.active {
+  background-color: white;
+  color: black;
+}
